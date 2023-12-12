@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>JS Drum Kit</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="https://fav.farm/🔥" />
+  </head>
+  <body>
+
+ 
+    <!-- parent container for the keys -->
+    <div class="keys">
+      <!-- child containers for each key -->
+
+      
+      <div data-key="49" class="key">
+        <div class="img-container">
+          <img src="images/bell.svg" alt="" />
+        </div>
+        <kbd>1</kbd>
+        <span class="sound">church bells</span>
+      </div>
+
+      <div data-key="50" class="key">
+        <div class="img-container">
+          <img src="images/mystic.svg" alt="" />
+        </div>
+
+        <kbd>2</kbd>
+        <span class="sound">mystic</span>
+      </div>
+
+      <div data-key="51" class="key">
+        <div class="img-container">
+          <img src="images/wind-tree.svg" alt="" />
+        </div>
+
+        <kbd>3</kbd>
+        <span class="sound">wind</span>
+      </div>
+
+      <div data-key="52" class="key">
+        <div class="img-container">
+          <img class="bird" src="images/bird.svg" alt="" />
+        </div>
+
+        <kbd>4</kbd>
+        <span class="sound">birds</span>
+      </div>
+
+      <div data-key="53" class="key">
+        <div class="img-container">
+          <img src="images/beats.svg" alt="" />
+        </div>
+
+        <kbd>5</kbd>
+        <span class="sound">beats</span>
+      </div>
+
+      <div data-key="54" class="key">
+        <div class="img-container">
+          <img src="images/forest-walk.svg" alt="" />
+        </div>
+
+        <kbd>6</kbd>
+        <span class="sound">forest walk</span>
+      </div>
+
+      <div data-key="55" class="key">
+        <div class="img-container">
+          <img src="images/loud-silence.svg" alt="" />
+         </div>
+
+          <kbd>7</kbd>
+          <span class="sound">loud silence</span>
+        </div>
+
+        <div data-key="56" class="key">
+          <div class="img-container">
+
+          <img src="images/singing-bowl.svg" alt="" />
+          </div>
+
+          <kbd>8</kbd>
+          <span class="sound">singing bowl</span>
+        </div>
+
+        <div data-key="57" class="key">
+          <div class="img-container">
+
+          <img class="thunder" src="images/thunder.svg" alt="" />
+</div>
+          <kbd>9</kbd>
+          <span class="sound">thunder</span>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- pause all -->
+    <!-- <div id="pauseAll" data-key="32" class="key">
+    <kbd>SPACE TAB</kbd>
+    <span class="sound">PAUSE ALL</span>
+  </div> -->
+
+    <audio data-key="49" src="sounds/church-bells.wav"></audio>
+    <audio data-key="50" src="sounds/mystic-music.mp3"></audio>
+    <audio data-key="51" src="sounds/wind_trees.mp3"></audio>
+    <audio data-key="52" src="sounds/birds.mp3"></audio>
+    <audio data-key="53" src="sounds/beats.mp3"></audio>
+    <audio data-key="54" src="sounds/forest-walk.mp3"></audio>
+    <audio data-key="55" src="sounds/loud-silence.mp3"></audio>
+    <audio data-key="56" src="sounds/singing-bowl.mp3"></audio>
+    <audio data-key="57" src="sounds/thunder.mp3"></audio>
+    
+
+    <!-- <audio data-key="32" src="sounds/water-stream.mp3"></audio> -->
+
+    <script src="script.js"></script>
+  </body>
+</html>
