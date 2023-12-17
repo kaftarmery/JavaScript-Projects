@@ -1,0 +1,23 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  height: 100vh;
+}
+
+.grid {
+  margin: 20px auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.square {
+  width: 200px;
+  height: 200px;
+  border: 1px solid black;
+}
+
+.mole {
+  background-image: url(mole.png);
+  background-size: contain;
+}
