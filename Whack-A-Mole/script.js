@@ -1,6 +1,7 @@
 // look after all the elements that have 'square' on them
 const squares = document.querySelectorAll(".square");
-const mole = document.querySelector(".mole");
+const badMole = document.querySelector(".badMole");
+const goodMole = document.querySelector("goodMole");
 const startGame = document.querySelector(".start-game");
 
 // pick timer and the score elements
@@ -16,15 +17,17 @@ let timerId = null;
 const randomSquare = () => {
   // step 1. only one square pe moment can have the mole
   squares.forEach((square) => {
-    square.classList.remove("mole");
+    square.classList.remove("badMole");
+    square.classList.remove();
   });
 
   // step 2. get a random position
   let randomSquare = squares[Math.floor(Math.random() * 9)];
-  randomSquare.classList.add("mole");
+  randomSquare.classList.add("badMole");
+  randomSquare.classList.add("goodMole");
 
   // step 3. add the mole (based on step 2's randomness)
-  randomSquare.classList.add("mole");
+  // randomSquare.classList.add("badMole");
 
   // get the id of the randomly chosen square
   // and put that inside the hit position
@@ -51,7 +54,6 @@ squares.forEach((square) => {
 const moveMoleAround = () => {
   // setInterval(function, timeInterval)
   timerId = setInterval(randomSquare, 500);
-
   currentTime--;
   timer.textContent = currentTime--;
 };
